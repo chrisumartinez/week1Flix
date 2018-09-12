@@ -16,14 +16,22 @@ class NowPlayingViewController: UIViewController {
         let request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         let session  = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
         
-        let task = session.dataTask(with: request) { (data, response, error) in
+        let task = session.dataTask(with: request)
+        { (data, response, error) in
             if let error = error{
                 print(error.localizedDescription)
             } else if let data = data{
-                
-            }
+                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                let movies = dataDictionary["results"] as! [[String: Any]]
+                for movie in movies{
+                    let title = movie["title"] as! String
+                    print(title)
+                }
         }
         // Do any additional setup after loading the view.
+            
+    }
+        task.resume()
     }
 
     override func didReceiveMemoryWarning() {
