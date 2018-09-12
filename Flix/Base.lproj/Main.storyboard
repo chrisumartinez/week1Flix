@@ -38,16 +38,22 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="169" height="199"/>
                                                     <color key="backgroundColor" red="0.0" green="1" blue="0.1678815008725163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-dl-fsm">
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nu1-N8-Hxe">
                                                     <rect key="frame" x="174" y="7" width="178" height="29"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="29" id="rDQ-g4-1qn"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBI-EH-aOW">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-dl-fsm">
+                                                            <rect key="frame" x="0.0" y="0.0" width="178" height="29"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="29" id="rDQ-g4-1qn"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBI-EH-aOW">
                                                     <rect key="frame" x="177" y="72" width="183" height="139"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -58,13 +64,9 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="IdV-Zx-IOq" secondAttribute="bottom" constant="26" id="1nh-1M-Fzu"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="uBI-EH-aOW" secondAttribute="bottom" constant="14" id="FeT-fk-Ucn"/>
                                                 <constraint firstItem="IdV-Zx-IOq" firstAttribute="leading" secondItem="wJ7-Z0-nVf" secondAttribute="leading" id="X2D-Os-ZKo"/>
-                                                <constraint firstItem="uBI-EH-aOW" firstAttribute="top" secondItem="2ZW-dl-fsm" secondAttribute="bottom" constant="36" id="bbK-Yd-cr9"/>
                                                 <constraint firstItem="uBI-EH-aOW" firstAttribute="leading" secondItem="IdV-Zx-IOq" secondAttribute="trailing" constant="8" symbolic="YES" id="cMJ-eN-2Xr"/>
                                                 <constraint firstItem="IdV-Zx-IOq" firstAttribute="top" secondItem="wJ7-Z0-nVf" secondAttribute="top" id="ex8-x4-Nqd"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="uBI-EH-aOW" secondAttribute="trailing" constant="-1" id="i50-Vi-TJx"/>
-                                                <constraint firstItem="2ZW-dl-fsm" firstAttribute="top" secondItem="wJ7-Z0-nVf" secondAttribute="topMargin" constant="-4" id="pgE-8P-aJU"/>
-                                                <constraint firstItem="2ZW-dl-fsm" firstAttribute="leading" secondItem="IdV-Zx-IOq" secondAttribute="trailing" constant="5" id="vgS-H2-oWo"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="2ZW-dl-fsm" secondAttribute="trailing" constant="7" id="yI4-X6-Eo0"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
