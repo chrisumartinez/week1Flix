@@ -22,49 +22,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1p1-S3-ouY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1p1-S3-ouY">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <prototypes>
-                                    <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="236" id="YgW-CG-TG4" customClass="MovieCell" customModule="Flix" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="236"/>
+                                    <tableViewCell autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="61" id="YgW-CG-TG4" customClass="MovieCell" customModule="Flix" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YgW-CG-TG4" id="wJ7-Z0-nVf">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="235.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IdV-Zx-IOq">
-                                                    <rect key="frame" x="0.0" y="0.0" width="169" height="199"/>
-                                                    <color key="backgroundColor" red="0.0" green="1" blue="0.1678815008725163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IdV-Zx-IOq">
+                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="61"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Wonder Woman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-dl-fsm">
-                                                    <rect key="frame" x="174" y="7" width="178" height="29"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZW-dl-fsm">
+                                                    <rect key="frame" x="185" y="0.0" width="190" height="24"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="29" id="rDQ-g4-1qn"/>
+                                                        <constraint firstAttribute="height" constant="24" id="DgU-x8-wHS"/>
+                                                        <constraint firstAttribute="width" constant="190" id="Szn-KP-ZQE"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBI-EH-aOW">
-                                                    <rect key="frame" x="177" y="72" width="183" height="139"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBI-EH-aOW">
+                                                    <rect key="frame" x="185" y="36" width="190" height="25"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="IdV-Zx-IOq" secondAttribute="bottom" constant="26" id="1nh-1M-Fzu"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="uBI-EH-aOW" secondAttribute="bottom" constant="14" id="FeT-fk-Ucn"/>
-                                                <constraint firstItem="IdV-Zx-IOq" firstAttribute="leading" secondItem="wJ7-Z0-nVf" secondAttribute="leading" id="X2D-Os-ZKo"/>
-                                                <constraint firstItem="uBI-EH-aOW" firstAttribute="top" secondItem="2ZW-dl-fsm" secondAttribute="bottom" constant="36" id="bbK-Yd-cr9"/>
-                                                <constraint firstItem="uBI-EH-aOW" firstAttribute="leading" secondItem="IdV-Zx-IOq" secondAttribute="trailing" constant="8" symbolic="YES" id="cMJ-eN-2Xr"/>
-                                                <constraint firstItem="IdV-Zx-IOq" firstAttribute="top" secondItem="wJ7-Z0-nVf" secondAttribute="top" id="ex8-x4-Nqd"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="uBI-EH-aOW" secondAttribute="trailing" constant="-1" id="i50-Vi-TJx"/>
-                                                <constraint firstItem="2ZW-dl-fsm" firstAttribute="top" secondItem="wJ7-Z0-nVf" secondAttribute="topMargin" constant="-4" id="pgE-8P-aJU"/>
-                                                <constraint firstItem="2ZW-dl-fsm" firstAttribute="leading" secondItem="IdV-Zx-IOq" secondAttribute="trailing" constant="5" id="vgS-H2-oWo"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="2ZW-dl-fsm" secondAttribute="trailing" constant="7" id="yI4-X6-Eo0"/>
+                                                <constraint firstItem="IdV-Zx-IOq" firstAttribute="centerY" secondItem="wJ7-Z0-nVf" secondAttribute="centerY" id="5ne-D8-GAU"/>
+                                                <constraint firstAttribute="trailing" secondItem="2ZW-dl-fsm" secondAttribute="trailing" id="JWN-Oa-eEC"/>
+                                                <constraint firstItem="IdV-Zx-IOq" firstAttribute="leading" secondItem="wJ7-Z0-nVf" secondAttribute="leading" id="L4r-b7-Lev"/>
+                                                <constraint firstItem="IdV-Zx-IOq" firstAttribute="top" secondItem="wJ7-Z0-nVf" secondAttribute="top" id="R49-VR-Lik"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uBI-EH-aOW" secondAttribute="bottom" id="Vhf-hZ-EeB"/>
+                                                <constraint firstItem="2ZW-dl-fsm" firstAttribute="top" secondItem="IdV-Zx-IOq" secondAttribute="top" id="e5j-3l-mhL"/>
+                                                <constraint firstItem="2ZW-dl-fsm" firstAttribute="leading" secondItem="uBI-EH-aOW" secondAttribute="leading" id="f7B-nt-cVD"/>
+                                                <constraint firstItem="uBI-EH-aOW" firstAttribute="top" secondItem="2ZW-dl-fsm" secondAttribute="bottom" constant="12" id="gp9-TA-9nI"/>
+                                                <constraint firstItem="2ZW-dl-fsm" firstAttribute="trailing" secondItem="uBI-EH-aOW" secondAttribute="trailing" id="hTl-k4-86S"/>
+                                                <constraint firstItem="2ZW-dl-fsm" firstAttribute="leading" secondItem="IdV-Zx-IOq" secondAttribute="trailing" constant="8" symbolic="YES" id="miz-QE-v2Y"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -84,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.60000000000001" y="118.29085457271366"/>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>
