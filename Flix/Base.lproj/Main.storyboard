@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vAp-AV-b2r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LKi-8c-8JK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -87,7 +87,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="118.29085457271366"/>
+            <point key="canvasLocation" x="1996" y="118.29085457271366"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="hdg-W5-CU9">
@@ -143,12 +143,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e73-X6-J8s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1764" y="117.39130434782609"/>
+            <point key="canvasLocation" x="2703.1999999999998" y="117.39130434782609"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Now Playing-->
         <scene sceneID="Rfg-6u-utE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vAp-AV-b2r" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Now Playing" image="now_playing_tabbar_item" id="T9d-Dw-jfJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vjE-qw-YKs">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -161,7 +162,67 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LwY-qK-I4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1056.8" y="118.29085457271366"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="87x-r7-1pS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="LKi-8c-8JK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kuV-rs-dXS">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vAp-AV-b2r" kind="relationship" relationship="viewControllers" id="FKa-A0-S4A"/>
+                        <segue destination="Du0-Q3-OEG" kind="relationship" relationship="viewControllers" id="gMf-ce-s6d"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oql-3H-8gz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="K2Q-XM-UF1">
+            <objects>
+                <viewController id="SlS-6D-beJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tYE-hd-tRm"/>
+                        <viewControllerLayoutGuide type="bottom" id="biB-oB-D4u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CoB-si-Sgb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="XRv-w1-czE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cVS-qb-81O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1032.8" y="864.91754122938539"/>
+        </scene>
+        <!--Superhero-->
+        <scene sceneID="atV-mY-mYd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Du0-Q3-OEG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Superhero" image="superhero_tabbar_item" id="cys-5b-9DJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vhl-Ji-qD6">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SlS-6D-beJ" kind="relationship" relationship="rootViewController" id="FVS-6Z-RyQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXO-GD-WSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="864.91754122938539"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="now_playing_tabbar_item" width="21" height="21"/>
+        <image name="superhero_tabbar_item" width="21" height="23"/>
+    </resources>
 </document>
