@@ -15,7 +15,15 @@ class MovieCell: UITableViewCell {
     @IBOutlet weak var overviewLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        posterImageView.layer.cornerRadius = 3
+        posterImageView.clipsToBounds = true
         // Initialization code
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
