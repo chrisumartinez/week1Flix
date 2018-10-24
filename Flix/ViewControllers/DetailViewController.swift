@@ -29,27 +29,18 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var overViewLabel: UILabel!
     
 
-    var movie :[String: Any]?
+    var movie : Movie?
     
     
     override func viewDidLoad() {
         
         if let movie = movie{
-            titleLabel.text = movie[MovieKeys.title] as? String
-            releaseDateLabel.text = movie[MovieKeys.releaseDate] as? String
-            overViewLabel.text = movie[MovieKeys.overview] as? String
+            titleLabel.text = movie.title as String
+            releaseDateLabel.text = movie.releaseDate as String
+            overViewLabel.text = movie.overview as String
             
-            
-            let baseURLString = "http://image.tmdb.org/t/p/w500"
-            
-            let backDropPathString = movie[MovieKeys.backdropPath] as! String
-            let posterPathString = movie[MovieKeys.posterPath] as! String
-            
-            let backdropURL = URL(string: baseURLString + backDropPathString)!
-            let posterpathURL = URL(string: baseURLString + posterPathString)!
-            
-            backDropImageView.af_setImage(withURL: backdropURL)
-            posterImageView.af_setImage(withURL: posterpathURL)
+            backDropImageView.af_setImage(withURL: movie.backDropURL!)
+            posterImageView.af_setImage(withURL: movie.posterURL!)
             
         }
         

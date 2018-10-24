@@ -11,6 +11,8 @@
 		5D3F23E8A1A551E658B01E01 /* Pods_FlixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29CCD1E0B26A2EBBDFD75649 /* Pods_FlixTests.framework */; };
 		A602B6BF2151E4500023E9ED /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A602B6BE2151E4500023E9ED /* PosterCell.swift */; };
 		A602B6C12151E4A70023E9ED /* SuperheroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A602B6C02151E4A70023E9ED /* SuperheroViewController.swift */; };
+		A6236043217AD82300288A5E /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6236042217AD82300288A5E /* Movie.swift */; };
+		A6236045217D651B00288A5E /* MovieApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6236044217D651B00288A5E /* MovieApiManager.swift */; };
 		A64196472140352C00F5F948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64196462140352C00F5F948 /* AppDelegate.swift */; };
 		A641964C2140352C00F5F948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A641964A2140352C00F5F948 /* Main.storyboard */; };
 		A641964E2140353C00F5F948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A641964D2140353C00F5F948 /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		A0989F69CC8B2D473097657C /* Pods-Flix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Flix.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Flix/Pods-Flix.debug.xcconfig"; sourceTree = "<group>"; };
 		A602B6BE2151E4500023E9ED /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
 		A602B6C02151E4A70023E9ED /* SuperheroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroViewController.swift; sourceTree = "<group>"; };
+		A6236042217AD82300288A5E /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		A6236044217D651B00288A5E /* MovieApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApiManager.swift; sourceTree = "<group>"; };
 		A64196432140352B00F5F948 /* Flix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64196462140352C00F5F948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A641964B2140352C00F5F948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -120,6 +124,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A6236041217AD80800288A5E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6236042217AD82300288A5E /* Movie.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A641963A2140352B00F5F948 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +157,7 @@
 		A64196452140352C00F5F948 /* Flix */ = {
 			isa = PBXGroup;
 			children = (
+				A6236041217AD80800288A5E /* Models */,
 				A6D33207214F31D300B43A05 /* ViewControllers */,
 				A6D33206214F317F00B43A05 /* Views */,
 				A64196462140352C00F5F948 /* AppDelegate.swift */,
@@ -189,6 +202,7 @@
 				A641967421403D5B00F5F948 /* NowPlayingViewController.swift */,
 				A6D33208214F324000B43A05 /* DetailViewController.swift */,
 				A602B6C02151E4A70023E9ED /* SuperheroViewController.swift */,
+				A6236044217D651B00288A5E /* MovieApiManager.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -404,10 +418,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6236043217AD82300288A5E /* Movie.swift in Sources */,
 				A641967521403D5B00F5F948 /* NowPlayingViewController.swift in Sources */,
 				A602B6BF2151E4500023E9ED /* PosterCell.swift in Sources */,
 				A602B6C12151E4A70023E9ED /* SuperheroViewController.swift in Sources */,
 				A64196472140352C00F5F948 /* AppDelegate.swift in Sources */,
+				A6236045217D651B00288A5E /* MovieApiManager.swift in Sources */,
 				A6F3E2322148BBC00038BA53 /* MovieCell.swift in Sources */,
 				A6D33209214F324000B43A05 /* DetailViewController.swift in Sources */,
 			);

@@ -70,7 +70,7 @@
                                             <outlet property="overviewLabel" destination="uBI-EH-aOW" id="KaA-NE-6Cg"/>
                                             <outlet property="posterImageView" destination="IdV-Zx-IOq" id="pCJ-U4-06S"/>
                                             <outlet property="titleLabel" destination="2ZW-dl-fsm" id="Wgr-fR-Ggo"/>
-                                            <segue destination="Ckv-EC-vfS" kind="show" id="ufb-i5-3uw"/>
+                                            <segue destination="Ckv-EC-vfS" kind="show" identifier="detailSegue" id="4WV-LQ-Eyt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
